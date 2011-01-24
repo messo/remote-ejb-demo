@@ -15,9 +15,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class GetHello extends HttpServlet {
 
-    @EJB
+    @EJB(mappedName = "corbaname:iiop:192.168.1.101:3700#HelloBean")
     HelloBeanRemote hello;
-    
+
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
      * @param request servlet request
