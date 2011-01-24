@@ -6,7 +6,7 @@ import javax.ejb.Stateless;
  *
  * @author messo
  */
-@Stateless
+@Stateless(name = "HelloBean")
 public class HelloBean implements HelloBeanRemote, HelloBeanLocal {
 
     @Override
